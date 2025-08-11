@@ -1,0 +1,11 @@
+# Entorno virtual
+.venv/
+
+# Archivos temporales / caché
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de datos grandes (si no querés subirlos)
+data/output/*.csv
+pipeline.log
