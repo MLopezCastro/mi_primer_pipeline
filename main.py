@@ -6,7 +6,8 @@ logger = get_logger("pipeline")
 
 def run():
     logger.info("=== Inicio del pipeline ===")
-    df = load_csv("data/input/ventas_raw.csv")  # ruta fija, simple
+    df = load_csv("data/input/ventas_raw.csv")
+    logger.info(f"Filas leídas: {len(df)}")
     save_csv(df, "data/output/ventas_limpias.csv")
     logger.info("=== Fin del pipeline ===")
 
